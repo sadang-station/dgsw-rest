@@ -20,4 +20,4 @@ Built with [Cloudflare Workers](https://workers.cloudflare.com/).
 If you want to add quotes, you can suggest them.
 Add quotes on `src/data/quotes-list.ts` and make PR.
 
-Or you can use [goole form]((https://docs.google.com/forms/d/e/1FAIpQLSeCnzODlkZcibis6XBAuB69F3MuguIKeMTlfQP-vtaJtJkA-g/viewform?usp=publish-editor)) to suggest quotes.
+Or you can use [goole form](https://docs.google.com/forms/d/e/1FAIpQLSeCnzODlkZcibis6XBAuB69F3MuguIKeMTlfQP-vtaJtJkA-g/viewform?usp=publish-editor) to suggest quotes.

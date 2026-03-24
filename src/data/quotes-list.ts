@@ -16,12 +16,4 @@ export const QUOTES_LIST: QuoteType[] = [
     name: "서희원",
     quote: "난 차동규를 사랑해",
   },
-  {
-    name: "김민재",
-    quote: "난 이재명을 사랑해",
-  },
-  {
-    name: "안현우",
-    quote: "너는나를존중해야한다나는피파2700등을찍었으며어쩌고"
-  }
 ];

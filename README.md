@@ -6,7 +6,7 @@ Built with [Cloudflare Workers](https://workers.cloudflare.com/).
 
 ## Usage
 
-### `GET` [https://dgsw-rest.pjmin0923.workers.dev/comment](https://dgsw-rest.pjmin0923.workers.dev/comment)
+### `GET` [https://dgsw-rest.pjmin0923.workers.dev/quote](https://dgsw-rest.pjmin0923.workers.dev/quote)
 
 ```json
 {
@@ -14,6 +14,29 @@ Built with [Cloudflare Workers](https://workers.cloudflare.com/).
   "comment": "대소고는 개인주의야"
 }
 ```
+
+### `GET` [https://dgsw-rest.pjmin0923.workers.dev/quote/all](https://dgsw-rest.pjmin0923.workers.dev/quote/all)
+
+```json
+[
+  {
+    "name": "박재민",
+    "comment": "대소고는 개인주의야"
+  },
+  {
+    "name": "박재민",
+    "comment": "대소고는 이기주의야"
+  },
+  {
+    "name": "박재민",
+    "comment": "대소고는 자본주의야"
+  },
+]
+```
+
+## Docs ( Swagger UI )
+
+[API DOCS](https://dgsw-rest.pjmin0923.workers.dev/docs)
 
 ## Add quotes
 

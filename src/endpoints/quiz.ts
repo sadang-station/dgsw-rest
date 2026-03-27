@@ -81,6 +81,63 @@ export class Quiz extends OpenAPIRoute {
   }
 }
 
+export class QuizOpen extends OpenAPIRoute {
+  schema = {
+    tags: ["Quiz"],
+    summary: "Get an Open-Ended Quiz Question",
+    responses: {
+      "200": {
+        description: "명언을 보고 누가 한 말인지 직접 입력하는 주관식 퀴즈를 반환합니다.",
+        content: {
+          "application/json": {
+            schema: z.object({
+              success: z.boolean(),
+              result: z.object({
+                quote: Str({ example: "낭만" }),
+                hint: Str({ example: "ㅅㅅㅎ" }),
+                answerId: Str({ example: "abc12345" }),
+              }),
+            }),
+          },
+        },
+      },
+    },
+  };
+
+  async handle(_c: AppContext) {
+    cleanExpiredAnswers();
+
+    const randomIndex = Math.floor(Math.random() * QUOTES_LIST.length);
+    const correctQuote = QUOTES_LIST[randomIndex];
+
+    const hint = correctQuote.name
+      .split("")
+      .map((ch) => {
+        const code = ch.charCodeAt(0);
+        if (code >= 0xAC00 && code <= 0xD7A3) {
+          return String.fromCharCode(Math.floor((code - 0xAC00) / 588) + 0x3131);
+        }
+        return "*";
+      })
+      .join("");
+
+    const answerId = generateId();
+    answerStore.set(answerId, {
+      correctAnswer: correctQuote.name,
+      expiresAt: Date.now() + 5 * 60 * 1000,
+    });
+
+    return {
+      success: true,
+      result: {
+        quote: correctQuote.quote,
+        hint,
+        answerId,
+      },
+    };
+  }
+}
+
 export class QuizAnswer extends OpenAPIRoute {
   schema = {
     tags: ["Quiz"],
@@ -141,7 +198,8 @@ export class QuizAnswer extends OpenAPIRoute {
       );
     }
 
-    const correct = stored.correctAnswer === answer;
+    const normalize = (s: string) => s.replace(/\s/g, "");
+    const correct = normalize(stored.correctAnswer) === normalize(answer);
     const correctAnswer = stored.correctAnswer;
 
     answerStore.delete(answerId);

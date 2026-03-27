@@ -40,9 +40,9 @@ export class Quiz extends OpenAPIRoute {
             schema: z.object({
               success: z.boolean(),
               result: z.object({
-                quote: Str({ example: "낭만" }),
-                choices: z.array(Str({ example: "심서훈" })),
-                answerId: Str({ example: "abc12345" }),
+                quote: Str({ example: "인생은 짧고 예술은 길다" }),
+                choices: z.array(Str({ example: "홍길동" })),
+                answerId: Str({ example: "550e8400-e29b-41d4-a716-446655440000" }),
               }),
             }),
           },
@@ -93,9 +93,9 @@ export class QuizOpen extends OpenAPIRoute {
             schema: z.object({
               success: z.boolean(),
               result: z.object({
-                quote: Str({ example: "낭만" }),
-                hint: Str({ example: "ㅅㅅㅎ" }),
-                answerId: Str({ example: "abc12345" }),
+                quote: Str({ example: "인생은 짧고 예술은 길다" }),
+                hint: Str({ example: "ㅎㄱㄷ" }),
+                answerId: Str({ example: "550e8400-e29b-41d4-a716-446655440000" }),
               }),
             }),
           },
@@ -147,8 +147,8 @@ export class QuizAnswer extends OpenAPIRoute {
         content: {
           "application/json": {
             schema: z.object({
-              answerId: Str({ description: "퀴즈 문제의 ID", example: "abc12345" }),
-              answer: Str({ description: "선택한 인물 이름", example: "심서훈" }),
+              answerId: Str({ description: "퀴즈 문제의 ID", example: "550e8400-e29b-41d4-a716-446655440000" }),
+              answer: Str({ description: "선택한 인물 이름", example: "홍길동" }),
             }),
           },
         },
@@ -163,7 +163,7 @@ export class QuizAnswer extends OpenAPIRoute {
               success: z.boolean(),
               result: z.object({
                 correct: z.boolean(),
-                correctAnswer: Str({ example: "심서훈" }),
+                correctAnswer: Str({ example: "홍길동" }),
               }),
             }),
           },

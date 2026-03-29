@@ -51,4 +51,4 @@ Or you can use [goole form](https://docs.google.com/forms/d/e/1FAIpQLSeCnzODlkZc
 
 All data is independent of the developer's opinion.
 Anonymity is guaranteed for all quote registrations.
-**In addition, all data cannot be deleted or modified.**
+**In addition, all data is not modified or deleted unless requested by the speaker.**

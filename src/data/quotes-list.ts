@@ -41,7 +41,7 @@ export const QUOTES_LIST: QuoteType[] = [
   { name: "박준현", quote: "아니 내 닭다리 내놓으라고! (이하 생략)" },
   { name: "제민국", quote: "냐옹" },
   { name: "이해준", quote: "JS는 아름다운 언어야!" },
-  { name: "박병준", quote: "쌤! 준현이가 자살했어요!" },
+  { name: "한준혁", quote: "쌤! 준현이가 자살했어요!" },
   { name: "박준현", quote: "오래된 생각이다.." },
   { name: "강원석", quote: "노,노, 노트북 덮어라" },
   { name: "박유현", quote: "게임 개발 할려면 저희학교 오지마세요" },

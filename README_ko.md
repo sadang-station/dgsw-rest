@@ -42,13 +42,13 @@
 
 ## 명언 추가
 
-만약 명언을 추가하길 원한다면, 직접 제안 가능합니다.
+만약 명언을 추가하길 원한다면, 직접 제안 가능합니다. <br/>
 `src/data/quotes-list.ts` 에 명언을 추가하고 PR을 올려 제안해주세요.
 
 혹은 익명성이 보장되는 [구글 폼](https://docs.google.com/forms/d/e/1FAIpQLSeCnzODlkZcibis6XBAuB69F3MuguIKeMTlfQP-vtaJtJkA-g/viewform?usp=publish-editor)을 통해 추천할 수 있습니다.
 
 ## 주의 사항
 
-모든 데이터는 개발자의 의견과 무관함을 알립니다.
-모든 데이터에 익명성이 보장됩니다.
+모든 데이터는 개발자의 의견과 무관함을 알립니다. <br/>
+모든 데이터에 익명성이 보장됩니다. <br/>
 **또한 모든 데이터는 발화자 본인의 요청이 없는 한 수정되거나 삭제되지 않습니다.**

@@ -1,6 +1,6 @@
 # [DGSW-rest](https://dgsw-rest.pjmin0923.workers.dev)
 
-[한국어](README_ko.md) | [English](README.md)
+[한국어](README_ko.md) | [English](README.md) | [日本語](README_ja.md) | [Русский](README_ru.md) | [中文](README_zh.md) | [Español](README_es.md) | [Português](README_pt.md) | [ภาษาไทย](README_th.md) | [Tiếng Việt](README_vi.md) | [العربية](README_ar.md)
 
 A free REST API for random DGSW people quotes.
 

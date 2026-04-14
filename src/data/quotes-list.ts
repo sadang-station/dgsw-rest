@@ -19,7 +19,6 @@ export const QUOTES_LIST: QuoteType[] = [
   { name: "이윤하", quote: "봇치더락은 근본이다 (박세빈)" },
   { name: "여승원", quote: "나는 잘생겼다." },
   { name: "박춘우", quote: "아사꿈행" },
-  { name: "심서훈", quote: "낭만" },
   { name: "오지석", quote: "더 이상 기능반에 대한 지원은 없습니다." },
   { name: "박상민", quote: "백엔드는 노예 새끼다" },
   { name: "익명", quote: "아빠 다리 안하냐" },
@@ -56,4 +55,10 @@ export const QUOTES_LIST: QuoteType[] = [
   { name: "심서훈", quote: "워딩 착하게 하자" },
   { name: "이경민", quote: "\"성능 좋은\"" },
   { name: "권동우", quote: "대소고에미련없다" },
+  { name: "김건우", quote: "대소고의 카사노바 박상민" },
+  { name: "박춘우", quote: "은율이 좀 자세요" },
+  { name: "박종범", quote: "정박수 뒤질래?" },
+  { name: "박종범", quote: "야이 쓰리 게이들아" },
+  { name: "윤진영", quote: "가라" },
+  { name: "김용진", quote: "앙 김용진" },
 ];
